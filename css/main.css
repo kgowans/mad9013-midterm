@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic);
+/*
+Colors
+https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=4&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.2925207038422286,0,0.5,0.70952898537912,0.30000000000000004,1,0.5850414076844572,0,1,0.35476449268956,0.15000000000000002,0.5,0.4680331261475658,0,0.8&swatchOrder=0,1,2,3,4
+Dark purple #4B007F
+Pale purple #B54CFF
+Purple #9500FF
+Darker Purple #5A267F
+Tinted Purple #7700CC
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #5A267F;
+}
+
+.wrapper{
+    background-color: #FAFAFA
+}
+
+
+.masthead,
+.mainnav,
+.content,
+.side,
+.footer {
+    padding: 2em 2em;
+}
+
+.masthead {
+    background-image: url("http://lorempixel.com/1600/500/cats/");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mainnav {
+    text-align: center;
+}
+
+.footer {
+    color: #4B007F;
+}
+
+.mainnav a, .mainnav a:visited{
+    text-decoration: none;
+    font-size: 1.4em;
+    display: block;
+    background-color: #7700CC;
+    color: #FAFAFA;
+    font-weight: 700
+    
+}
+
+.mainnav a:hover {
+    background-color: #B54CFF;
+}
+
+.mainnav ul {
+    list-style: none;
+    
+}
+
+h1 {
+    font-size: 1.953em;
+    font-weight: 700;
+    color: #000;
+}
+
+h2 {
+    font-size: 1.563em;
+    font-weight: 700;
+    color:  #333;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.primary h3 {
+    margin-top: 1.5em;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+img {
+    width: 100%;
+}
+
+
+@media all and (min-width: 35em) and (max-width: 60em){
+    
+    .mainnav li {
+        float: left;
+        width: 25%;
+    }
+    .content {
+        float:left;
+        width: 63%;
+    }
+    
+    .side {
+        float: left;
+        width: 37%;
+    }
+    
+}
+
+@media all and (min-width: 60em){
+
+    .wrapper {
+        max-width: 1600px;
+    }
+    
+    .mainnav {
+        float: left;
+        width: 25%;
+    }
+    
+    .content {
+        float: left;
+        width: 50%;
+    }
+    
+    .side {
+        float: left;
+        width: 25%;
+    }
+    
+    .primary {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 4em;
+        -moz-column-gap: 4em;
+        column-gap: 4em;
+    }
+    
+    .mainnav ul:after {
+        background-image: url("http://lorempixel.com/500/500/cats/");
+        background-size:contain;
+        background-repeat: no-repeat;
+        content: " ";
+        display: block;
+        height: 500px;
+        margin-top: 2em;
+    }
+}
+
+@media all and (min-width: 35em) {
+    
+    .wrapper {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.827em;
+    }
+
+    h2 {
+        font-size: 1.999em;
+    }
+    
+    h3 {
+        font-size: 1.414em;
+    }
+    
+    p {
+        line-height: 1.5em;
+    }
+    
+  
+}
+
+@media all and (min-width: 35em) and (max-width: 43em) {
+    .mainnav a, .mainnav a:visited{
+        font-size: 1.1em;
+    }
+
+}
+
+@media all and (max-width: 60em) {
+     
+    .mainnav {
+        padding: 0;
+    }
+}
